@@ -1,20 +1,12 @@
-require('normalize.css/normalize.css');
-require('styles/App.css');
+import React,{ Component } from "react";
+import "../styles/App.css";
 
-import React from 'react';
 
-class AppComponent extends React.Component {
-  render() {
-    return (
-      <div className="index">
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
-        <h1 style = {{color:'#333'}}>{'哈哈哈'}</h1>
-      </div>
-    );
+export default class App extends Component{
+  constructor(props){
+    super();
   }
-}
-
-AppComponent.defaultProps = {
+  render(){
+    return <h1 style = {{textAlign:"center"}}> Hello World </h1>
+  }
 };
-
-export default AppComponent;
